@@ -1,0 +1,643 @@
+:root{
+    --main_font: "Poppins", sans-serif;
+    --secondary_font: "PT Sans", sans-serif;
+    --third_font:"Potta One", sans-serif;
+    --primary_color: #fc0;
+    --secondary_color: #353535;
+    --gradient_color: linear-gradient(130deg, #fc0 0%, #fff5cb 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+a{
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6,ul,ol,p,span{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: var(--main_font);
+}
+.btn--primary{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 180%;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    gap: 11px;
+    border-radius: 12px;
+    background: var(--primary_color);
+    padding: 10px 21px;
+}
+.btn--primary.btn--lg{
+    padding: 16px 45px;
+    font-size: 20px;
+}
+.btn--outline{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 180%;
+    color: var(--secondary_color);
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 16px 18px;
+    display: inline-flex;
+    align-items: center;
+    gap: 11px;
+}
+.btn--outline.btn--lg{
+    font-size: 18px;
+    padding: 17px 43px;
+}
+
+
+/* header section css starts here */
+#mynavbar ul li a{
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--secondary_color);
+    text-transform: uppercase;
+    padding: 23px 23px 5px;
+    border-bottom: 1px solid transparent;
+}
+#mynavbar ul li:hover a{
+    border-bottom: 1px solid var(--secondary_color);
+}
+/* header section css ends here */
+/* banner section css starts here */
+#banner{
+    padding: 56px 0 0;
+}
+#banner h5{
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--secondary_color);
+}
+#banner h1{
+    font-weight: 700;
+    font-size: 64px;
+    color: var(--secondary_color);
+    font-family: var(--secondary_font);
+    margin: 15px 0 25px;
+}
+#banner p{
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--secondary_color);
+    margin-bottom: 45px;
+}
+#banner a{
+    transition: .3s;
+    margin-right: 40px;
+}
+#banner a:hover{
+    background: white;
+    color: var(--secondary_color);
+}
+#banner .follow_me{
+    margin-top: 66px;
+}
+#banner .follow_me a{
+    color: var(--secondary_color);
+    margin-right: 15px;
+    font-size: 24px;
+    background: #f4f3f3;
+    width: 40px;
+    height: 40px;
+    line-height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+}
+#banner .follow_me h6{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 180%;
+    color: var(--secondary_color);
+}
+/* banner section css ends here */
+/* about me section css starts here */
+#about_me{
+    background: url(../img/about\ bg.png);
+    background-size: cover;
+    background-repeat:no-repeat;
+    position: relative;
+}
+#about_me .contents h2{
+    font-family: var(--secondary_font);
+    font-size: 50px;
+    font-weight: 700;
+    color: #353535;
+}
+#about_me .contents p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 190%;
+    color: #353535;
+    margin-bottom: 45px;
+}
+#about_me .contents{
+    height: 100%;
+    align-items: center;
+}
+#about_me::after{
+    content: '';
+    display: block;
+    width: 180px;
+    height: 85px;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+    background: #63b176;
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+}
+/* about me section css ends here */
+/* qualities css starts here */
+#qualities{
+    margin: 100px 0;
+}
+#qualities .info h6{
+    font-family: var(--secondary_font);
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 180%;
+    text-align: center;
+    margin: 15px 0;
+    color: var(--secondary_color)
+}
+#qualities .info p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 190%;
+    text-align: center;
+    color: #7a7a7a;
+}
+#qualities .bg_wrapper{
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.08);
+    padding: 20px 45px;
+    border-radius: 10px;
+    margin-right: 20px;
+    cursor:pointer;
+}
+/* qualities css ends here */
+/* branding css starts here */
+#branding{
+    margin-bottom: 95px;
+    padding-top: 33px;
+    position: relative;
+}
+#branding .bg_check{
+    background: url(../img/about\ bg.png);
+    height: 100%;
+    border-radius: 10px;
+}
+
+.bg_check::after{
+    content: '';
+    width: 60px;
+    height: 75px;
+    background: #c8a0cb;
+    position: absolute;
+    right: 175px;
+    top: -5px;
+    border-top-left-radius: 75px;
+    transform: rotate(15deg);
+}
+#branding .brand_cnt h3{
+    font-family: var(--secondary_font);
+    font-weight: 700;
+    font-size: 44px;
+    color: #353535;
+}
+#branding .brand_cnt p{
+    font-family: var(--main_font);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 190%;
+    color: #353535;
+    margin-bottom: 45px;
+    margin-top: 20px;
+}
+#branding .brand_cnt a{
+    color: var(--secondary_color);
+    transition: .3s;
+}
+#branding .brand_cnt a:hover{
+    background: #fff;
+}
+#branding .brand_cnt{
+    position: relative;
+}
+#branding .brand_cnt img.img_arrow{
+    position: absolute;
+    /* bottom: 0; */
+    top: 178px;
+    left: 230px;
+}
+/* branding css ends here */
+/* help section css starts here */
+#help{
+    margin: 70px 0;
+}
+#help .help_icons_wrapper{
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.08);
+    border-radius: 10px;
+    padding: 20px 10px;
+    margin-bottom: 25px;
+}
+#help .help_icons_wrapper .cnt h6{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 180%;
+    color: #353535;
+}
+#help .help_icons_wrapper .cnt p{
+    font-family: var(--secondary_font);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 180%;
+    color: #353535;
+}
+#help .help_info_wrapper h2{
+    font-family: var(--secondary_font);
+    font-weight: 700;
+    font-size: 50px;
+    color: #353535;
+}
+#help .help_info_wrapper p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 190%;
+    color: #353535;
+    margin: 35px 0;
+}
+#help .help_info_wrapper ul li h6{
+    font-weight: 700;
+    font-size: 40px;
+    color: #353535;
+    margin-bottom: 20px;
+}
+#help .done_projects{
+    justify-content: end;
+}
+#help .done_projects .ul_f{
+    margin-left: 67px;
+}
+/* help section css ends here */
+/* work experience css starts here */
+#exp{
+    padding: 150px 0;
+}
+#exp h2{
+    font-weight: 600;
+    text-align: center;
+    margin: 0 0 70px 0;
+}
+#exp .timeline .designation{
+    border-right: 2px dashed #7a7a7a;
+    position: relative;
+    padding: 3px 0 117px;
+}
+#exp .timeline .designation::before{
+    content: '';
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    border: 2px dashed #7a7a7a;
+    border-radius: 50%;
+    top: -21px;
+    right: -21px;
+    background: #fff;
+}
+#exp .timeline .designation::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    top: -10px;
+    right: -10px;
+}
+#exp .timeline.green .designation::after{
+    background: #52ab70;
+}
+#exp .timeline.red .designation::after{
+    background: #f17676;
+}
+#exp .timeline.yellow .designation::after{
+    background: #ffd233;
+}
+#exp .timeline .designation h4{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 180%;
+    color: var(--secondary_color);
+}
+#exp .timeline .designation p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+    color: #7a7a7a; 
+}
+#exp .timeline .role h4{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 180%;
+    color: var(--secondary_color);
+}
+#exp .timeline .role p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 200%;
+    color: var(--secondary_color);
+}
+/* work experience css ends here */
+/* expert areas css starts here */
+#experties{
+    margin-bottom: 150px;
+}
+#experties .paragraphs h3{
+    font-family: var(--secondary_font);
+    font-weight: 700;
+    font-size: 50px;
+    color: #353535;
+}
+#experties .paragraphs p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 200%;
+    color: #7a7a7a;
+    margin: 40px 0;
+    text-align: justify;
+}
+#experties .paragraphs a{
+    background: var(--primary_color);
+    color: #fff;
+    border: none;
+}
+#experties .progress_bar .pro_details h6.name1{
+    margin-right: 296px;
+}
+#experties .progress_bar .pro_details h6.name2{
+    margin-right: 163px;
+}
+#experties .progress_bar .pro_details h6.name3{
+    margin-right: 285px;
+}
+#experties .progress_bar .pro_details h6.name4{
+    margin-right: 180px;
+}
+#experties .progress_bar .bar .bar_percent1{
+    width: 80%;
+    height: 3px;
+    background: #f16500;
+    border-radius: 10px;
+}
+#experties .progress_bar .bar .bar_percent2{
+    width: 58%;
+    height: 3px;
+    background: #03279b;
+    border-radius: 10px;
+}
+#experties .progress_bar .bar .bar_percent3{
+    width: 71%;
+    height: 3px;
+    background: #700d60;
+    border-radius: 10px;
+}
+#experties .progress_bar .bar .bar_percent4{
+    width: 59%;
+    height: 3px;
+    background: #234bda;
+    border-radius: 10px;
+}
+#experties .progress_bar .pro_details h6.math1{
+    color: #f16500;
+}
+#experties .progress_bar .pro_details h6.math2{
+    color: #03279b;
+}
+#experties .progress_bar .pro_details h6.math3{
+    color: #700d60;
+}
+#experties .progress_bar .pro_details h6.math4{
+    color: #234bda;
+}
+#experties .progress_bar .bar{
+    width: 100%;
+    height: 3px;
+    background: #7a7a7a;
+    border-radius: 10px
+}
+/* expert areas css ends here */
+/* my services css starts here */
+#my_service{
+    background: #fff7d5;
+    padding: 50px 0;
+}
+#my_service .titles h3{
+    margin: 40px 0;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    color: #353535;
+}
+#my_service .titles p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+    text-align: center;
+    color: #7a7a7a;
+}
+#my_service .service_details h4{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 180%;
+    text-align: center;
+    color: #353535;
+}
+#my_service .service_details p{
+    padding: 25px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 180%;
+    text-align: center;
+    color: #7a7a7a;
+}
+#my_service .services img.service_img{
+    margin: 20px 0 10px 0;
+    width: 80px;
+}
+#my_service .services{
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.08);
+    margin-right: 20px;
+    margin-top: 40px;
+    transition: .3s;
+    background: #fff;
+}
+#my_service .services:hover{
+    background: linear-gradient(151deg, #fc0 0%, #ffe476 98.84%);
+    margin-top: 20px;
+    cursor: pointer;
+}
+/* my services css ends here */
+/* feedback section css starts here */
+#feedback{
+    padding: 50px 0;
+    background: #fbfbfb;
+}
+#feedback .row_2{
+    margin: 25px 0;
+}
+#feedback .feedback_paragraph h3{
+    font-family: var(--secondary_font);
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 135%;
+    color: #353535;
+}
+#feedback .feedback_paragraph p{
+    color: #7a7a7a;
+    font-size: 18px;
+    line-height: 180%;
+}
+#feedback .feedback_p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 200%;
+    color: #7a7a7a;
+}
+#feedback .title_para{
+    margin: 24px 0;
+}
+#feedback .title_para h6{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 200%;
+    color: #353535;
+}
+#feedback .title_para p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: #7a7a7a;
+}
+/* feedback section css ends here */
+/* blogspost section css starts here */
+#blog {
+    padding: 50px 0;
+}
+#blog .blog_h3{
+    margin-bottom: 100px;
+    font-size: 50px;
+    text-align: right;
+    line-height: 135%;
+    color: #353535;
+}
+#blog .blog_details_para1 p{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 190%;
+    color: #7a7a7a;
+}
+#blog .blog_details_para1 h6{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 190%;
+    color: #353535;
+    margin-left: 10px;
+}
+#blog .blog_details_para1 iconify-icon{
+    vertical-align: middle;
+}
+#blog .blog_details_para2 p{
+    font-weight: 600;
+    font-size: 14px;
+    margin: 25px 0 25px 0;
+    line-height: 190%;
+    color: #353535;
+}
+#blog .blog_details_para2 a{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 190%;
+    color: #353535;
+}
+#blog .blog_details_para2 iconify-icon{
+    vertical-align: middle;
+}
+#blog .full_row{
+    margin-bottom: 20px;
+}
+/* blogspost section css ends here */
+/* newsletter section css starts here */
+#newsletter .for_bg{
+    background: url(../img/newsbg.png);
+    height: 295px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+#newsletter .news_whole_row{
+    padding: 100px 75px;
+}
+#newsletter .details p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 200%;
+    color: #353535;
+}
+#newsletter .details h4{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 200%;
+    color: #353535;
+}
+#newsletter .input_area{
+    display: flex;
+    margin-top: 10px;
+    height: 80px;
+}
+#newsletter .input_area input{
+    width: 300px;
+    padding: 25px 16px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    outline: none;
+    border: none;
+}
+#newsletter .input_area a{
+    width: 132px;
+    background: #ff6565;
+    color: #fff;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+/* newsletter section css ends here */
+/* footer section css starts here */
+#footer{
+    padding: 100px 50px;
+    height: 480px;
+}
+#footer .last_one{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#footer .last_one img{
+    width: 100px;
+}
+/* footer section css ends here */
