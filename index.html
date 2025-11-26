@@ -182,10 +182,10 @@
         <div class="row justify-content-between">
           <div class="col-lg-4">
             <div class="row help_icons_wrapper">
-              <div class="col-lg-3 justify-content-center">
+              <div class="col-12 col-lg-3 justify-content-center">
                 <img src="./img/help1.png" alt="" class="img-fluid">
               </div>
-              <div class="col-lg-8 d-flex align-items-center">
+              <div class="col-lg-8 d-flex align-items-center justify-content-lg-start justify-content-center">
                 <div class="cnt">
                   <h6>Website Design</h6>
                 <p>712 Projects</p>
@@ -196,7 +196,7 @@
               <div class="col-lg-3 justify-content-center">
                 <img src="./img/help2.png" alt="" class="img-fluid">
               </div>
-              <div class="col-lg-8 d-flex align-items-center">
+              <div class="col-lg-8 d-flex align-items-center justify-content-lg-start justify-content-center">
                 <div class="cnt">
                   <h6>Mobile App Design</h6>
                 <p>712 Projects</p>
@@ -207,7 +207,7 @@
               <div class="col-lg-3 justify-content-center">
                 <img src="./img/help3.png" alt="" class="img-fluid">
               </div>
-              <div class="col-lg-8 d-flex align-items-center">
+              <div class="col-lg-8 d-flex align-items-center justify-content-lg-start justify-content-center">
                 <div class="cnt">
                   <h6>Brand Identity</h6>
                 <p>712 Projects</p>
@@ -256,11 +256,11 @@
           <div class="timeline green">
             <div class="row justify-content-between">
               <div class="col-lg-4 designation">
-                <h4>Self Employ, India</h4>
+                <h4>New Man Services</h4>
                 <p>Sept 2019 - Aug 2020</p>
               </div>
               <div class="col-lg-7 role">
-                <h4>Visual Designer</h4>
+                <h4>UI/UX Designer</h4>
                 <p>A Visual designe design for a varaity of platforms which may includes internat and internet sites, games, movies and wareable. In short, they create the concept. </p>
               </div>
             </div>
@@ -268,11 +268,11 @@
           <div class="timeline yellow">
             <div class="row justify-content-between">
               <div class="col-lg-4 designation">
-                <h4>Self Employ, India</h4>
+                <h4>Global Solution</h4>
                 <p>Sept 2019 - Aug 2020</p>
               </div>
               <div class="col-lg-7 role">
-                <h4>Visual Designer</h4>
+                <h4>Sr. Products Designer</h4>
                 <p>A Visual designe design for a varaity of platforms which may includes internat and internet sites, games, movies and wareable. In short, they create the concept. </p>
               </div>
             </div>
@@ -550,7 +550,27 @@
      </section>
     <!-- blogpost section ends here -->
     <!-- news letter section starts here -->
-     <section id="newsletter">
+     <section class="newsletter-section d-flex justify-content-center">
+  <div class="newsletter-box">
+    <div class="row align-items-center">
+
+      <div class="col-lg-6 col-md-12 text-area">
+        <small>Subscribe Now</small>
+        <h3>Get My Newsletter</h3>
+        <p>Get latest news, updates, tips and trics in your inbox</p>
+      </div>
+
+      <div class="col-lg-6 col-md-12 form-area">
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email here" required />
+          <button type="submit">Send Now</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+     <!-- <section id="newsletter">
       <div class="container for_bg">
         <div class="row news_whole_row">
           <div class="col-lg-6">
@@ -568,23 +588,43 @@
           </div>
         </div>
       </div>
-     </section>
+     </section> -->
     <!-- news letter section ends here -->
     <!-- footer section starts here -->
      <footer id="footer">
         <div class="container">
-          <div class="row">
+          <div class="row justify-content-center">
             <div class="col-lg-3">
-              <div class="last_one">
-                <img src="./img/logo.png" alt="logo" class="img-fluid">
-                <ul>
-                  <li><a href="#">Call:</a></li>
-                  <li><a href="#">000000000000</a></li>
-                </ul>
+              <div class="last_one d-flex flex-column justify-content-between">
+                <img class="img_footer_icon1" src="./img/footerIcon1.png" alt="">
+                <img src="./img/footerlogo.png" alt="logo" class="img-fluid">
+                <h6>Call:</h6>
+                <p>+8801818181818</p>
+                <img class="img_footer_icon2" src="./img/footerIcon2.png" alt="">
               </div>
             </div>
-            <div class="col-lg-5"></div>
-            <div class="col-lg-3"></div>
+            <div class="col-lg-5 last_two">
+              <h5>Lets work together</h5>
+              <p class="paragraph">
+                You can express yourself however you want and whenever you want, for free. You can customize a template or make your own.
+              </p>
+              <h6>Email:</h6>
+              <p class="para_mail">example@gmail.com</p>
+            </div>
+            <div class="col-lg-3 last_three">
+                <a href="#" class="btn--primary btn--lg">Lets Talk <iconify-icon icon="f7:paperplane" width="24" height="24"></iconify-icon></a>
+                <div class="row footer_follows">
+                <div class="col-lg-5">
+                  <h6>Follow Me:</h6>
+                </div>
+                <div class="col-lg-7">
+                  <a href="#"><iconify-icon icon="icon-park-outline:dribble"></iconify-icon></a>
+                  <a href="#"><iconify-icon icon="ri:behance-fill"></iconify-icon></a>
+                  <a href="#"><iconify-icon icon="mdi:instagram"></iconify-icon></a>
+                </div>
+              </div>
+              <img class="img_footer_icon3" src="./img/footerIcon3.png" alt="">
+            </div>
           </div>
         </div>
      </footer>
