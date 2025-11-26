@@ -581,7 +581,7 @@ body{
 }
 /* blogspost section css ends here */
 /* newsletter section css starts here */
-#newsletter .for_bg{
+/* #newsletter .for_bg{
     background: url(../img/newsbg.png);
     height: 295px;
     background-repeat: no-repeat;
@@ -589,7 +589,7 @@ body{
     border-radius: 20px;
 }
 #newsletter .news_whole_row{
-    padding: 100px 75px;
+    padding: 80px 75px;
 }
 #newsletter .details p{
     font-weight: 400;
@@ -605,7 +605,7 @@ body{
 }
 #newsletter .input_area{
     display: flex;
-    margin-top: 10px;
+    margin-top: 25px;
     height: 80px;
 }
 #newsletter .input_area input{
@@ -625,19 +625,132 @@ body{
     place-items: center;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+} */
+.newsletter-box{
+  background: linear-gradient(135deg, #ffcc00, #ffe680);
+  padding: 65px 40px;
+  border-radius: 15px;
+  width: 100%;
+  height: 230px;
+  max-width: 1000px;
+}
+.text-area small{
+  font-size:14px;
+  color:#444;
+}
+.text-area h3{
+  font-weight:700;
+  margin:5px 0;
+}
+.text-area p{
+  font-size:14px;
+  color:#555;
+}
+.newsletter-form{
+  display:flex;
+  background:#fff;
+  border-radius:8px;
+  overflow:hidden;
+}
+.newsletter-form input{
+  flex:1;
+  padding:12px;
+  border:none;
+  outline:none;
+}
+.newsletter-form button{
+  background:#ff6b6b;
+  border:none;
+  padding:12px 20px;
+  color:#fff;
+  font-weight:600;
+  cursor:pointer;
 }
 /* newsletter section css ends here */
 /* footer section css starts here */
 #footer{
     padding: 100px 50px;
     height: 480px;
+    background: url(../img/footerbg.png);
+    margin-top: 100px;
+    position: relative;
 }
-#footer .last_one{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+#footer .last_one h6{
+    margin-top: 70%;
+    color: #bbb9bb;
+}
+#footer .last_one p{
+    color: #fff;
+    font-size: 15px;
+    margin-top: 10px;
 }
 #footer .last_one img{
-    width: 100px;
+    width: 200px;
+    margin-top: 20px;
+}
+.practice{
+    height: 100px;
+}
+#footer .last_two h5{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 200%;
+    color: #fff;
+}
+#footer .last_two .paragraph{
+    font-weight: 400;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 180%;
+    text-align: justify;
+    color: #bbb9b9;
+}
+#footer .last_two h6{
+    margin: 78px 0 7px 0;
+    color: #bbb9b9;
+}
+#footer .last_two .para_mail{
+    color: #fff;
+}
+#footer .footer_follows{
+    margin-top: 60%;
+}
+#footer .footer_follows h6{
+    font-weight: 400;
+    line-height: 180%;
+    color: #fff;
+}
+#footer .footer_follows iconify-icon{
+    color: #fff;
+    vertical-align: middle;
+    margin-right: 5px;
+    background: #484848;
+    padding: 10px;
+    border-radius: 50%;
+}
+#footer .last_three{
+    margin-left: 20px;
+}
+#footer .last_three a{
+    margin-top: 40px;
+}
+#footer .last_one img.img_footer_icon1{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 185px;
+    left: 88px;
+}
+#footer .last_one img.img_footer_icon2{
+    position: absolute;
+    width: 110px;
+    height: 90px;
+    bottom: 40px;
+    left: 0;
+}
+#footer .last_three img.img_footer_icon3{
+    position: absolute;
+    top: 200px;
+    right: 95px;
 }
 /* footer section css ends here */
