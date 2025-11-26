@@ -1,5 +1,5 @@
 /* extra samll device responsive starts here */
-@media (min-width:320px) and (max-width:575.98px){
+@media (min-width:320px) and (max-width:575px){
 #mynavbar ul li a {
     text-align: right;
 }
@@ -15,6 +15,9 @@
 #banner .follow_me a {
     margin-right: 5px;
     font-size: 18px;
+}
+#banner .follow_me {
+    margin-bottom: 60px;
 }
 #about_me img.img-fluid{
     transform: rotateY(180deg);
@@ -109,9 +112,9 @@
 #blog .blog_details_para2{
     margin-bottom: 20px;
 }
-#newsletter .details{
-    font-size: 10px;
-}
+    .newsletter-box{padding:20px;}
+    .newsletter-form{flex-direction:column;}
+    .newsletter-form button{width:100%;}
 }
 /* extra small device responsive ends here */
 /* small device responsive starts here */
@@ -210,25 +213,32 @@
 #exp .timeline .designation h4 {
     font-size: 18px;
 }
+.newsletter-form{flex-direction:row;}
 }
 /* small device resonsive ends here */
 /* medium device responsive starts here */
-@media (min-width:768px) and (miz-width:991.98px){
-    
+@media (min-width:768px) and (max-width:991.98px){
+    .newsletter-box{padding:25px;}
 }
 /* medium device responsive end here */
 /* large device responsive starts here */
 @media (min-width:992px) and (max-width:1199.98px){
-
+.newsletter-box{
+    max-width:900px;
+  }
 }
 /* large devices responsive ends here */
 /* extra large device responsive device starts here */
 @media (min-width:1200px) and (max-width:1399.98){
-    
+.newsletter-box{
+    max-width:1050px;
+  }
 }
 /* extra large device responsive device end here */
 /* extra extra large device responsive device starts here*/
 @media (mix-width: 1400px) {
-
+.newsletter-box{
+    max-width:1200px;
+  }
 }
 /* extra extra large device responsive device ends here*/
